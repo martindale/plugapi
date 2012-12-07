@@ -73,12 +73,12 @@ type: 'chat'
 Example:
 ```
 { data: 
-   { fromID: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-     message: 'hello world',
-     from: 'mnme',
-     type: 'message',
-     chatID: 'xxxxxxxxxx' },
-  type: 'chat' }
+	 { fromID: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+		 message: 'hello world',
+		 from: 'mnme',
+		 type: 'message',
+		 chatID: 'xxxxxxxxxx' },
+	type: 'chat' }
 ```
 ####	userLeave
 ```
@@ -108,43 +108,43 @@ type: 'userJoin'
 Example:
 ```
 { data: 
-   { username: 'mnme',
-     status: 0,
-     fans: 3,
-     listenerPoints: 164,
-     language: 'en',
-     avatarID: 'bud03',
-     id: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-     curatorPoints: 0,
-     djPoints: 76 },
-  type: 'userJoin' }
+	 { username: 'mnme',
+		 status: 0,
+		 fans: 3,
+		 listenerPoints: 164,
+		 language: 'en',
+		 avatarID: 'bud03',
+		 id: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+		 curatorPoints: 0,
+		 djPoints: 76 },
+	type: 'userJoin' }
 ```
 
 ####	userUpdate
 ```
 data:
-    username: String
-    status: enum 0/1/2/3/4/5
-    fans: Number
-    listenerPoints: Number
-    language: String
-    avatarID: String
-    id: String
-    curatorPoints: Number
-    djPoints: Number
+		username: String
+		status: enum 0/1/2/3/4/5
+		fans: Number
+		listenerPoints: Number
+		language: String
+		avatarID: String
+		id: String
+		curatorPoints: Number
+		djPoints: Number
 ```
 Example:
 ```
 data:
-    { username: 'cannjeff',
-      status: 0,
-      fans: 46,
-      listenerPoints: 8255,
-      language: 'en',
-      avatarID: 'bud02',
-      id: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-      curatorPoints: 179,
-      djPoints: 6225 }
+		{ username: 'cannjeff',
+			status: 0,
+			fans: 46,
+			listenerPoints: 8255,
+			language: 'en',
+			avatarID: 'bud02',
+			id: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+			curatorPoints: 179,
+			djPoints: 6225 }
 
 ```
 
@@ -158,7 +158,7 @@ type: 'voteUpdate'
 Example:
 ```
 { data: { vote: 1, id: 'user id' },
-  type: 'voteUpdate' }
+	type: 'voteUpdate' }
 ```
 
 ####	curateUpdate
@@ -170,7 +170,7 @@ data:
 Example:
 ```
 { data: { id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-  type: 'curateUpdate' }
+	type: 'curateUpdate' }
 ```
 
 ####	djAdvance
@@ -194,20 +194,20 @@ type: 'djAdvance'
 Example:
 ```
 { data: 
-   { currentDJ: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-     djs: [ [Object], [Object], [Object], [Object], [Object] ],
-     mediaStartTime: '2012-11-28 21:12:28.674382',
-     media: 
-      { title: 'Freefire - Dataloss (Darth & Vader Remix)',
-        format: 'x',
-        author: 'Mateus Rossetto',
-        cid: 'xxxxxxxx',
-        duration: 332.935,
-        id: 'x:xxxxxxxx' },
-     playlistID: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-     earn: true,
-     historyID: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-  type: 'djAdvance' }
+	 { currentDJ: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+		 djs: [ [Object], [Object], [Object], [Object], [Object] ],
+		 mediaStartTime: '2012-11-28 21:12:28.674382',
+		 media: 
+			{ title: 'Freefire - Dataloss (Darth & Vader Remix)',
+				format: 'x',
+				author: 'Mateus Rossetto',
+				cid: 'xxxxxxxx',
+				duration: 332.935,
+				id: 'x:xxxxxxxx' },
+		 playlistID: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+		 earn: true,
+		 historyID: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
+	type: 'djAdvance' }
 ```
 
 ####	djUpdate
@@ -217,18 +217,18 @@ data:
 	plays: times the dj played a song, id: 'user id'
 	plays: times the dj played a song, id: 'user id'
 	plays: times the dj played a song, id: 'user id'
-    plays: times the dj played a song, id: 'user id'
+		plays: times the dj played a song, id: 'user id'
 type: 'djUpdate'
 ```
 Example:
 ```
 { data: 
-   [ { plays: 2, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-     { plays: 13, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-     { plays: 7, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-     { plays: 10, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
-     { plays: 0, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' } ],
-  type: 'djUpdate' }
+	 [ { plays: 2, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
+		 { plays: 13, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
+		 { plays: 7, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
+		 { plays: 10, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' },
+		 { plays: 0, id: 'xxxxxxxxxxxxxxxxxxxxxxxx' } ],
+	type: 'djUpdate' }
 ```
 
 ## Actions
