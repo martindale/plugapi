@@ -122,7 +122,30 @@ Example:
 
 ####	userUpdate
 ```
-sorry, only saw one time :(
+data:
+    username: String
+    status: enum 0/1/2/3/4/5
+    fans: Number
+    listenerPoints: Number
+    language: String
+    avatarID: String
+    id: String
+    curatorPoints: Number
+    djPoints: Number
+```
+Example:
+```
+data:
+    { username: 'cannjeff',
+      status: 0,
+      fans: 46,
+      listenerPoints: 8255,
+      language: 'en',
+      avatarID: 'bud02',
+      id: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+      curatorPoints: 179,
+      djPoints: 6225 }
+
 ```
 
 ####	voteUpdate
